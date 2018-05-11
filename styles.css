@@ -54,7 +54,13 @@ body {
     border-radius: 25px;
     font-weight: 600;
     text-transform: uppercase;
+    cursor: pointer;
 }
+
+button:focus, button:active {
+    border: none;
+}
+
 label {
     padding: 0 0.5rem;
     font-weight: bold;
@@ -77,4 +83,10 @@ input[type=text] {
 input[type=text]:focus {
     outline: none;
     box-shadow: 0 10px 0px -7px #4EA6EA, 0 10px 0px -7px #4EA6EA;
+}
+
+.error {
+    padding: 1rem 0.5rem;
+    color: #de3226;
+    font-weight: 600;
 }
